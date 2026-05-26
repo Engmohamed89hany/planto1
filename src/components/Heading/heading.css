@@ -1,0 +1,34 @@
+h2.head{
+    position: relative;
+}
+h2.head::after{
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 5px solid #5D8836;
+    border-top-color: transparent;
+    border-right-color: transparent;
+
+}
+h2.head::before{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: 5px solid #5D8836;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+}
+@media (max-width: 768px) {
+    h2.head::after, h2.head::before {
+        display: none;
+    }
+}
